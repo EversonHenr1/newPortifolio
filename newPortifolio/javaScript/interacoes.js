@@ -117,6 +117,10 @@ const cp = document.getElementById("cp")
 cp.onclick = function alerta(){
     alert("Video mostrando Banco de dados Link: https://www.youtube.com/watch?v=0IAMcx7rZpA")
 }
+const zoonew = document.getElementById("zooNEW")
+zoonew.onclick = function alerta1(){
+    alert("Site em desenvolvimento")
+}
 
 /* ESCREVER */
 
@@ -133,7 +137,7 @@ function escreverTexto(texto, elemento, velocidade) {
   }
   
   // Exemplo de uso:
-  var texto = "<Estudante Analise e Desenvolvimento>";
+  var texto = "< Estudante de Analise e Desenvolvimento de Sistemas >";
   var elemento = document.getElementById("legenda");
   var velocidade = 100; 
   

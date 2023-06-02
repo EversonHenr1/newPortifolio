@@ -224,7 +224,7 @@ header > div > a:hover::after{
 
 #home{
     background-color: var(--cor-fundo-1);
-    background: url(/newPortifolio/background/background.png) center center no-repeat;
+    background: url(../background/background.png) center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -378,7 +378,7 @@ nav >div > a:hover::after{
     background: no-repeat;
     background-position: top center;
     background-size: cover;
-    background-image: url(/newPortifolio/imagens/svg/wave\ 2.svg);
+    background-image: url(../imagens/svg/wave\ 2.svg);
 }
 
 /* FOTO  SOBRE*/
@@ -629,7 +629,7 @@ nav >div > a:hover::after{
     min-height: 120vh;
     padding-bottom: 150px;
     position: relative;
-    background: no-repeat url(/newPortifolio/background/16359104_v904-nunny-017-a\ \(1\).jpg) center top;
+    background: no-repeat url(../background/16359104_v904-nunny-017-a\ \(1\).jpg) center top;
     background-size: cover; 
 }
 #projetos > h2{
@@ -697,7 +697,7 @@ nav >div > a:hover::after{
     width: 523px;
     height: 368px;
     border:  1px solid rgba(0, 0, 0, 0.336);
-    background-image: url(/newPortifolio/imagens/Sem\ título\ \(1\).png);
+    background-image: url(../imagens/Sem\ título\ \(1\).png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -709,20 +709,20 @@ nav >div > a:hover::after{
 /* imagens projetos */
 
 #zoo{
-    background-image: url(/newPortifolio/imagens/projetos/zoo.png);
+    background-image: url(../imagens/projetos/zoo.png);
 }
 #cp{
-    background-image: url(/newPortifolio/imagens/projetos/cpfitness.png);
+    background-image: url(../imagens/projetos/cpfitness.png);
 }
 #zooNEW{
-    background-image: url(/newPortifolio/imagens/projetos/zologico.png);
+    background-image: url(../imagens/projetos/zologico.png);
     background-size: 105% 98% !important;
 }
 #porti{
-    background-image: url(/newPortifolio/imagens/projetos/portifolio.png);
+    background-image: url(../imagens/projetos/portifolio.png);
 }
 #multiplica{
-    background-image: url(/newPortifolio/imagens/projetos/multiplica.png);
+    background-image: url(../imagens/projetos/multiplica.png);
 }
 
 /* Rodapé */
