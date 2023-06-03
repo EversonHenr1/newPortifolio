@@ -396,7 +396,9 @@
     .projeto{
        height: 300px;
     }
-   
+    .btnDiv{
+        margin-bottom: 300px;
+    }
 }
 @media screen and (min-width:992px)and (max-width:1200px)  {
     #habilidades>article{

@@ -716,7 +716,7 @@ nav >div > a:hover::after{
 }
 #zooNEW{
     background-image: url(../imagens/projetos/zologico.png);
-    background-size: 105% 98% !important;
+    background-size: 105% 98% ;
 }
 #porti{
     background-image: url(../imagens/projetos/portifolio.png);
