@@ -136,7 +136,7 @@ function escreverTexto(texto, elemento, velocidade) {
     }, velocidade);
   }
   
-  // Exemplo de uso:
+
   var texto = "< Estudante de Analise e Desenvolvimento de Sistemas >";
   var elemento = document.getElementById("legenda");
   var velocidade = 100; 

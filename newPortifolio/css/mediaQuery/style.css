@@ -245,6 +245,9 @@
 }
 
 @media screen and (max-width:670px)  {
+    #zooNEW{
+        background-size: contain !important;
+    }
     header{
         display: none !important;
     }
