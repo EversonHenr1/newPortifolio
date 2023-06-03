@@ -245,6 +245,9 @@
 }
 
 @media screen and (max-width:670px)  {
+    #legenda{
+     padding-bottom: 40px !important;
+    }
     #perfil{
         padding-top: 0px;
     }
@@ -263,7 +266,7 @@
     #home{
         padding-top: 1px;
         background-color: var(--cor-fundo-1);
-        background-position: left bottom;
+        background-position: top center;
     }
     #home>article{
        padding-top: 20%;
@@ -364,7 +367,8 @@
         float: unset;
         display: block;
         padding: 0px !important;
-      
+    
+       
     }
     #containerEX > h3{
        display: none;
@@ -372,7 +376,7 @@
     }
     #containerDesc>div{
         
-        padding: 20px;
+        padding: 20px 0px;
         position: unset;
         text-align: center;
     }
@@ -404,6 +408,9 @@
     }
     .projeto{
        height: 300px;
+    }
+    #experiencia{
+       margin: 0px !important;
     }
    
 }
