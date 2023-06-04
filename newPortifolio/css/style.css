@@ -132,10 +132,8 @@ a.btn_rotation{
     padding: 23px 40px;
     border: 1px solid rgba(0, 0, 0, 0.151);
     font-size: 1.1em;
-    
     background-color: white;
-    transition: 0.4s ease-in-out;
-    
+    transition: 0.4s ease-in-out;  
 }
 .btn_green::before{
     content: " ";
@@ -163,9 +161,7 @@ a.btn_rotation{
 .btn_green > i:nth-child(1){
     margin-left: 24px;
 }
-
-/* Bar*/
-
+/* Barras de experiencias*/
 .bar{
     width: 350px;
     height: 25px;
@@ -179,11 +175,7 @@ a.btn_rotation{
     border-right: 1px solid var(--cor-fundo-1) ;
     background-color: var(--cor-destaque-1);
 }
-
-
-
 /* Cabeçario */
-
 header{
     padding-top: 20px;
     display: flex;
@@ -213,24 +205,17 @@ header > div > a::after{
     left: 0px;
     transition: 0.5s ease-in-out;
 }
-
-/* hover */
-
 header > div > a:hover::after{
     width: 100%;
 }
-
 /* Home */
-
 #home{
     background-color: var(--cor-fundo-1);
     background: url(../background/background.png) center center no-repeat;
     background-size: cover;
     position: relative;
 }
-
 /* Home - Social */
-
 #home > div{
     position: absolute;
     top:400px;
@@ -250,9 +235,6 @@ header > div > a:hover::after{
     border: 1.8px ridge #ffffff34;
     border-radius: 10px;
 } 
-
-/* Home - Social - Hover*/
-
 #home > div > a:hover > i{
     transition: all 0.25s ease-in-out;
     border-color: var(--cor-detalhes-1);
@@ -263,9 +245,7 @@ header > div > a:hover::after{
     transition: border 0.25s ease-in-out;
     border-color: #1ed760;
 }
-
 /* Home - Titulo/Nome */
-
 #home > article{
     width: fit-content;
     margin-top: 250px;
@@ -281,8 +261,7 @@ header > div > a:hover::after{
     color: white;
     font-family: var(--fonte-mono-1);
 }
-
-/* Menu Sticky */
+/* Menu */
 #barras{
     width:min-content;
     z-index: 2;
@@ -295,7 +274,6 @@ header > div > a:hover::after{
     right: 15px;
     cursor: pointer;
    transition: 0.4S ease-in-out;
-    
 }
 .menu{
     width: 33px;
@@ -304,9 +282,7 @@ header > div > a:hover::after{
     border: 1px solid black;
     transition: 0.5s ease-in-out;
     background-color: white;
-    
 }
-
 .xBAr:nth-of-type(1){
     transform:rotate(60deg);
     translate: 0px 10px;
@@ -327,7 +303,6 @@ nav{
     box-shadow: 1px 1px 1px black;
 }
 .nav-hidden{
-
     transition: 0.5s ease-in-out;
     width: 100%;
 }
@@ -336,11 +311,10 @@ nav{
     width: 0px;
 }
 nav > div{
-   padding: 20px;
+    padding: 20px;
     margin: auto;
     display: flex;
     justify-content: center;
-
 }
 nav >div > a{
     color: var(--cor-fundo-1);
@@ -362,15 +336,10 @@ nav >div > a::after{
     left: 0px;
     transition: 0.5s ease-in-out;
 }
-
-/* Menu Sticky  - Hover*/
-
 nav >div > a:hover::after{
     width: 100%;
 }
-
 /* Perfil */
-
 #perfil{
     position: relative;
     padding: 1px;
@@ -380,9 +349,7 @@ nav >div > a:hover::after{
     background-size: cover;
     background-image: url(../imagens/svg/wave\ 2.svg);
 }
-
 /* FOTO  SOBRE*/
-
 #container-foto{
     position: absolute;
     top: 60%;
@@ -390,7 +357,6 @@ nav >div > a:hover::after{
     width: 400px;
     height: 500px;
     transform: translate(-90% ,-50%);
-
 }
 #eu{
     width: 90%;
@@ -398,12 +364,8 @@ nav >div > a:hover::after{
     border: 2px solid var(--cor-fundo-1);
     outline: 2px solid var(--cor-fundo-1);
     outline-offset: 4px;
-  
  }
-
-
 /* Texto Sobre Mim */
-
 #perfil >article{
     position: absolute;
     top: 58%;
@@ -417,17 +379,13 @@ nav >div > a:hover::after{
     margin-bottom: 20px;
 }
 #perfil > article> ul{
-    
-    
     columns: 2;
     list-style-type: none;
 }
 #perfil > article> ul > li{
     font-size: 1.08em;
     line-height: 1.5em;
-    
 }
-
 #perfil > article> ul > li > strong{
     color: var(--cor-destaque-1);
 }
@@ -438,18 +396,15 @@ nav >div > a:hover::after{
     bottom: -40px;
     width:99.9%;
 }
-/* botão */
+/* botão curriculo */
 #btn_curriculo{
     top: 60px;
 }
-
 /* Experiencias */
-
 #experiencia{
     position: relative;
     background-color: #241E25;
     min-height: 110vh;
-    
 }
 #experiencia > article{
     position: absolute;
@@ -474,9 +429,7 @@ nav >div > a:hover::after{
 #experiencia li{
     color: white;
 }
-
 /* container da esquerda */
-
 #containerEX{
     padding-top: 22.5%;
     width: 30%;
@@ -510,8 +463,6 @@ nav >div > a:hover::after{
     border-left: 3px solid #2c272e;
     transition: 0.1s ease-in-out;
  }
-
- /* hover */
  #containerEX > ul > li:hover{
     border-left: 3px solid var(--cor-destaque-1);
     background-color: #00000057;
@@ -526,9 +477,7 @@ nav >div > a:hover::after{
  #linkedin{
     opacity: 0;
  }
- 
 /* container da Direita */
-
 #containerDesc{
     width: 70%;
     padding-top: 200px;
@@ -542,7 +491,7 @@ nav >div > a:hover::after{
     font-size: 1.6em;
     font-weight: normal !important;
 }
-#containerDesc>div > h3,#containerDesc>div > p,#containerDesc>div > span,#containerDesc>div > a {
+#containerDesc>div > h3,#containerDesc>div > p,#containerDesc>div > span,#containerDesc>div > a{
     color: white;
     font-family: roboto;
     font-weight: lighter;
@@ -578,16 +527,14 @@ nav >div > a:hover::after{
     color: white;
     padding-left: 10px; 
 }
-
 /* Habilidades */
-
 #habilidades{
     position: relative;
     min-height: 130vh;
     background-image: linear-gradient(#fff 80%,#EBEFF7);
 }
 #container-graficos{
-   width: 70vw;
+    width: 70vw;
     position: absolute;
     left: 50%;
     top: 70%;
@@ -622,9 +569,7 @@ nav >div > a:hover::after{
 #container-graficos > aside >div > p{
     float: right;
 }
-
 /* Projetos */
-
 #projetos{
     min-height: 120vh;
     padding-bottom: 150px;
@@ -665,7 +610,6 @@ nav >div > a:hover::after{
     padding: 10px;
     padding-top: 70px;
     transition: 0.5s ease-in-out;
-
 }
 .projeto:hover >a> div{
     opacity: 1;
@@ -692,7 +636,6 @@ nav >div > a:hover::after{
     padding: 20px 20px;
 }
 /* Card Projeto */
-
 .projeto{
     width: 523px;
     height: 368px;
@@ -702,12 +645,8 @@ nav >div > a:hover::after{
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.158);
-    /*     width: 523px;
-    height: 368px; */
 }
-
 /* imagens projetos */
-
 #zoo{
     background-image: url(../imagens/projetos/zoo.png);
 }
@@ -724,9 +663,7 @@ nav >div > a:hover::after{
 #multiplica{
     background-image: url(../imagens/projetos/multiplica.png);
 }
-
 /* Rodapé */
-
 footer{
     position: relative;
     height: 350px;
@@ -743,19 +680,16 @@ footer > h3{
 footer > h4 , footer > div >h4{
     padding: 20px 0px;
     font-size: 1.2em;
-
 }
 footer > h3, footer > h4,footer > p {
     color: white;
 }
-
 footer > a{
     padding: 10px;
-     background-color: #ffffffa6;
-     margin-right: 15px;
-     font-size: 1.3em;
-     border-radius: 6px;
-    
+    background-color: #ffffffa6;
+    margin-right: 15px;
+    font-size: 1.3em;
+    border-radius: 6px;
  }
  footer > a:hover{
     opacity: 0.2;
@@ -765,7 +699,6 @@ footer > a{
     position: absolute;
     bottom: 0px;
  }
- 
  footer > div> h4{
     color: white;
  }
@@ -774,9 +707,8 @@ footer > a{
     text-decoration: underline;
  }
  footer > a> i{
-     color: #1A1A1A;
+    color: #1A1A1A;
  }
-
  /* Efeito SCROLL */
 .init-hidden{
     opacity: 0;
