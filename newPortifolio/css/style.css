@@ -635,7 +635,7 @@ nav >div > a:hover::after{
     font-size: 1.1em !important;
     text-shadow: 2px 2px 1px black;
     color: white;
-    text-align: justify !important;
+    
     padding: 20px 20px;
 }
 /* Card Projeto */
