@@ -117,6 +117,11 @@ const cp = document.getElementById("cp")
 cp.onclick = function alerta(){
     alert("Video mostrando Banco de dados Link: https://www.youtube.com/watch?v=0IAMcx7rZpA")
 }
+const blog = document.querySelector('#Blog')
+blog.onclick = ()=>{
+    alert("https://youtu.be/kEd-k4kr5PU > outro projeto semelhante a esse utilizando:Node.js,Express,Mysql,Sequelize")
+}
+
 const zoonew = document.getElementById("zooNEW")
 zoonew.onclick = function alerta1(){
     alert("Site em desenvolvimento")
