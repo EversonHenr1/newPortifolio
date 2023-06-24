@@ -704,7 +704,7 @@ footer > a{
     transition:opacity 1s linear;
 }
 .init-hidden-off{
-    opacity: 1;
+    opacity: 0;
 }
 ::-webkit-scrollbar-track {
     background: var(--cor-fundo-1);
