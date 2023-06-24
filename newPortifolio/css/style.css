@@ -301,15 +301,16 @@ nav{
     top: 0px;
     overflow: hidden;
     box-shadow: 1px 1px 1px black;
-}
-.nav-hidden{
-    transition: 0.5s ease-in-out;
-    width: 100%;
-}
-.nav-off{
     transition: 0.5s ease-in-out;
     width: 0px;
 }
+.init-hidden{
+    opacity: 1 !important;
+}
+.nav-hidden{
+    width: 100% !important;
+}
+
 nav > div{
     padding: 20px;
     margin: auto;
@@ -649,28 +650,7 @@ nav >div > a:hover::after{
     background-position: center center;
     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.158);
 }
-/* imagens projetos */
-#zoo{
-    background-image: url(../imagens/projetos/zoo.png);
-}
-#cp{
-    background-image: url(../imagens/projetos/cpfitness.png);
-}
-#zooNEW{
-    background-image: url(../imagens/projetos/zologico.png);
-    background-size: 105% 98% ;
-}
-#porti{
-    background-image: url(../imagens/projetos/portifolio.png);
-}
-#multiplica{
-    background-image: url(../imagens/projetos/multiplica.png);
-}
-#Blog{
-    background-image: url(../imagens/projetos/blog.png);
-    background-size: cover ;
-    background-position: left center;
-}
+
 /* Rodapé */
 footer{
     position: relative;
@@ -678,6 +658,7 @@ footer{
     background-color: #201b22;
     text-align: center;
     padding-top: 90px;
+    
 }
 footer > h3{
     width: 100%;
@@ -723,7 +704,7 @@ footer > a{
     transition:opacity 1s linear;
 }
 .init-hidden-off{
-    opacity: 1;
+    opacity: 0;
 }
 ::-webkit-scrollbar-track {
     background: var(--cor-fundo-1);
@@ -736,4 +717,12 @@ footer > a{
 ::-webkit-scrollbar-thumb {
     background: #dad7d7;
     border-radius: 10px;
+}
+
+#tempHabilidade{
+    display: none;
+}
+.projeto{
+    background-position: center center !important;
+    background-size: cover !important;
 }

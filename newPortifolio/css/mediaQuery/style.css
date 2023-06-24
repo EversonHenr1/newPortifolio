@@ -384,3 +384,10 @@
         font-size: 0.7em;
     } 
 }
+#projTemp{
+    display: none;
+}
+.ii{
+    font-size: 5em !important;
+}
+

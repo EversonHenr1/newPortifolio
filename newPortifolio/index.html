@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../newPortifolio/css/style.css" media="all">
     <!-- MediaQuery (CSS) -->
     <link rel="stylesheet" href="../newPortifolio/css/mediaQuery/style.css">
+
     <!-- Biblioteca para icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,7 +22,7 @@
             <div class="menu"></div>
             <div class="menu"></div>
         </div>
-        <nav class="nav-off" id="menu" >
+        <nav id="menu" >
             <div>
                 <a href="#sobre" target="_self">sobre</a>
                 <a href="#experi" target="_self">experiencias</a>
@@ -101,10 +102,10 @@
                         Experiências
                     </h2>
                     <h3>Empresas</h3>
-                    <ul>
-                        <li id="ex1" class="btnHoverEX">New</li>
-                        <li id="ex2">Pajuçara</li>
-                        <li id="ex3">XSupermecados</li>
+                    <ul id="lista-ex">
+                        <li class="btnHoverEX">New</li>
+                        <li>Pajuçara</li>
+                        <li>XSupermecados</li>
                     </ul>
                 </aside>
                 <aside id="containerDesc" class="init-hidden">
@@ -133,76 +134,13 @@
             <article id="container-graficos" class="init-hidden">
                 <i class="fa fa-times-circle fa-2x" aria-hidden="true" style="float: right;"></i>
                 <aside>
-                    <div>
-                        <span>Excel</span>
-                        <p>(40%)</p>
+                    <div id="tempHabilidade">
+                        <span></span>
+                        <p></p>
                         <div class="bar">
-                            <div class="progress" style="width: 40%;"></div>
+                            <div class="progress"></div>
                         </div>
-                    </div> 
-                    <div> 
-                        <span>HTML</span>
-                        <p>(70%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div> 
-                    </div>
-                    <div>  
-                        <span>CSS</span>
-                        <p>(68%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 68%;"></div>
-                        </div> 
-                    </div> 
-                    <div>    
-                        <span>Javascript</span>
-                        <p>(30%)</p>
-                        <div class="bar">
-                          <div class="progress" style="width: 30%;"></div>
-                        </div> 
-                    </div>
-                    <div>   
-                        <span>Banco SQL</span>
-                        <p>(40%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 40%;"></div>
-                        </div>
-                    </div> 
-                    <div>
-                        <span>JAVA (Android)</span>
-                        <p>(45%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 45%;"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <span>XML (Android)</span>
-                        <p>(70%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <span>Linguagem C</span>
-                        <p>(35%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 35%;"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <span>Linguagem UML</span>
-                        <p>(36%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 36%;"></div>
-                        </div>
-                    </div> 
-                    <div>
-                        <span>Node.js</span>
-                        <p>(15%)</p>
-                        <div class="bar">
-                            <div class="progress" style="width: 15%;"></div>
-                        </div>
-                    </div> 
+                    </div>  
                 </aside>
                 <i class="fa fa-times-circle fa-2x" aria-hidden="true"></i>
                 <i class="fa fa-times fa-2x" aria-hidden="true"></i>
@@ -215,62 +153,16 @@
                 </span>
                 Portifolio
             </h2>
-            <article>
-                <div class="projeto  init-hidden" id="zoo">
-                    <a href="https://eversonhenr1.github.io/site_Zoologico_Guarulhos/Zoologico/" target="_blank">
+            <article id="paiProj">
+                <div class="projeto  init-hidden" id="projTemp">
+                    <a href="#" target="_blank">
                         <div>
-                            <i class="fa fa-link fa-5x" aria-hidden="true"></i>
-                            <h4>zoologico guarulhos</h4>
-                            <p>Projeto acâdemico (primeiro site), reformulação site site Zoologico de Guarulhos</p>
+                            <i class="ii fa" aria-hidden="true"></i>
+                            <h4></h4>
+                            <p></p>
                         </div>
                     </a> 
-                </div>
-                <div class="projeto init-hidden" id="cp">
-                    <a href="https://eversonhenr1.github.io/site_Cp_Fitness/Home/" target="_blank">
-                        <div>
-                            <i class="fa fa-link fa-5x" aria-hidden="true"></i>
-                            <h4>Academia CP Fitness</h4>
-                            <p>Projeto acâdemico (primeiro site com banco de dados), desenvolver um site que tenha Banco da dados SQL</p>
-                        </div>
-                    </a> 
-                </div>
-                <div class="projeto init-hidden" id="zooNEW" >
-                    <a href="#zooNEw" >
-                        <div style="cursor: not-allowed;">
-                            <i class="fa fa-lock fa-5x" aria-hidden="true"></i>
-                            <h4>Zoologico reformulado</h4>
-                            <p>Em processo de Desenvolvimento. reformulação do meu primeiro site com novos conhecimentos adquiridos</p>
-                        </div>
-                    </a> 
-                </div>
-                <div class="projeto init-hidden" id="porti">
-                    <a href="https://eversonhenr1.github.io/portifolio/" target="_blank">
-                        <div>
-                            <i class="fa fa-link fa-5x" aria-hidden="true"></i>
-                            <h4>Portifolio Base</h4>
-                            <p>Primeiro portifolio desenvolvido, somente para adquirir uma base</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="projeto init-hidden" id="multiplica">
-                    <a href="https://www.youtube.com/watch?v=cGCnGwEJFhk" target="_blank">
-                        <div>
-                            <i class="fa fa-youtube-play fa-5x" aria-hidden="true"></i>
-                            <h4>Multiplica</h4>
-                            <p>Aplicativo de finanças desenvolvido em JAVA,XML,SQL Lite no Android Studio</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="projeto init-hidden" id="Blog">
-                    <a href="https://youtu.be/62UA_ZU5U1c" target="_blank">
-                        <div>
-                            <i class="fa fa-youtube-play fa-5x" aria-hidden="true"></i>
-                            <h4>Blog</h4>
-                            <p>Estou desenvolvendo uma aplicação em NODE.js, utilizando:Express,Mongodb,Mongoose. aplicação no seus primeiros passos!</p>
-                        </div>
-                    </a>
-                </div>
-                
+                </div> 
             </article> 
             <div class="onda" style="z-index: 1;">
                 <img src="../newPortifolio/imagens/svg/wave.svg" alt="imagem de fundo com formato de onda">
@@ -290,7 +182,8 @@
             <p class="init-hidden">© Copyright 2023 - Everson Henrique - Todos os direitos Reservados.</p>
         </footer>
     </main>
-    <script src="../newPortifolio/javaScript/scroll.js"></script>
-    <script src="../newPortifolio/javaScript/interacoes.js"></script>
+  <script src="../newPortifolio/javaScript/scroll.js"></script>
+   
+    <script src="./javaScript/index.js"></script>
 </body>
 </html>
