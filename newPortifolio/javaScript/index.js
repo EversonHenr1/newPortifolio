@@ -6,8 +6,8 @@
     //Array com graficos
     let grafHabilidade = []
         //Arrays com informações dos graficos
-        let habilidades = ["Excel","HTML","css","JavaScript","SQL","linguagem C","Linguagem UML","Node.JS"]
-        let habilidadeTam =["40%","70%","68%","35%","40%","35%","25%","15%"]
+        let habilidades = ["Excel","HTML","css","JavaScript","SQL","linguagem C","Java(android)","Linguagem UML","Node.JS"]
+        let habilidadeTam =["40%","70%","68%","35%","40%","35%","25%","25%","15%"]
 
             //ForEach que criara os graficos
             habilidades.forEach((e,i,a)=>{
