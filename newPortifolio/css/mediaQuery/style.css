@@ -170,6 +170,12 @@
     nav>span>a:hover>i{
         color: gray ;
     }
+    .tecnologias{
+        
+        left: 0px;
+        gap: 20px 10px !important;
+    }
+    .tecnologias > 
 }
 /* media para tablet */
 @media screen and (min-width:670px) and (max-width:992px) {
@@ -350,7 +356,7 @@
         line-height: 2.2em;
     }
     #containerDesc>div > a {
-        display: block;
+        display: block !important;
         font-size: 1.8em !important;
         width: 100%;
         padding: 17px;
