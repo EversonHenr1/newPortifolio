@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/* Fontes  */
+@import url('https://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chivo+Mono:wght@300&family=Kanit:wght@600;900&family=Roboto:wght@100;400;500&display=swap');
+/* Configurações Gerais */
+:root{
+    /* Variaveis */
+    --cor-fundo-1:#1A1A1A;
+    --cor-destaque-1:#1ed760;
+    --cor-destaque-2:#17C3B2;
+    --cor-detalhes-1:#EDE7EB;
+    --fonte-normal-1:Gotham,Arial, Helvetica, sans-serif;
+    --fonte-mono-1:Roboto Mono,'Courier New', Courier, monospace;
+}
+/* Modificar de acordo com altura */
+@media screen and (max-height:670px) and (min-width: 1000px){
+    section{
+        min-height: 1200px !important;
+    }
+    #experiencia{
+        border-radius: 0px;
+    }
+}
+/* media para celular e tablet (universal) */
+@media screen and (max-width:992px){
+    /* cabeçario */
+    header > div:first-child{
+        display: none;
+    }
+    *{
+       font-size: 1em; 
+    }
+    /* home */
+    #home > article{
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        margin: 200px auto;
+    }
+    #home > article > h1{
+        margin-bottom: 30px;
+    }
+    /* botão */
+    .btnDiv{
+        width: 100%;
+    }
+    .btn_rotation{
+       color: var(--cor-fundo-1) !important;
+       background-color:var(--cor-detalhes-1) !important;
+       border: 2px solid black;
+       height: 100%;
+       width: 70% !important;
+       transition: scale 0.3s ease-in-out;
+    }
+    .btn_rotation:hover{
+        scale: 1.05;
+    }
+    .btn_rotation > i{
+        color: black !important;
+    }
+    /* social */
+    .social{
+        display: none !important;
+    }
+    /* sobre - foto*/
+    #eu{
+        height: 367px;
+        width: 286px;
+    }
+    #container-foto{
+        display: block;
+        transform: none;
+        position: unset;
+        width:fit-content;
+        height: fit-content;
+        margin: 90px auto;
+    }
+    #perfil > article{
+       position: unset;
+       transform: none;
+       margin: auto;     
+    }
+    #perfil > article > p{
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    #perfil > article > ul >li{
+        line-height: 1.9em;
+    }
+    #perfil{
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+    /* curriculo */
+    #btn_curriculo{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    /* habilidades */
+    #habilidades{
+        padding: 30px 0px;
+    }
+    #ling{
+        margin: 30px auto;
+    }
+    #container-graficos{
+        position: unset;
+        transform: none;
+        margin:70px auto;
+    }
+    #habilidades{
+        background-image: none;
+    }
+    /* projetos */
+    #projetos{
+        background-image: none;
+        min-height: 100vh;
+    }
+    #projetos > article{
+        padding-top:80px;
+    }
+    h2{
+        position: unset;
+        transform: none;
+    }
+    #sobre,#sobre>span>i{
+        color: white;
+    }
+    /* menu  - mobile*/
+    nav > div{
+        background-color: var(--cor-detalhes-1);
+        height: 100vh;
+        display: block;
+        padding-top: 15vh;
+    }
+    nav >div > a{
+        text-align: center;
+        padding: 25px;
+        margin: 40px 60px;
+        border-radius: 35px;
+        border: 1px solid var(--cor-fundo-1);
+        transition: 0.4s ease;
+    }
+    nav >div > a:hover{
+        background-color: var(--cor-fundo-1);
+        color: white;
+        margin: 40px 40px;
+    }
+    nav >div > a::after{
+        display: none;
+    }
+    nav>span{
+        color: black;
+        display: block !important;
+        position: absolute;
+        bottom: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+    }
+    nav>span>a{
+        font-size: 2.5em;
+        margin: 30px 20px;
+    }
+    nav>span>a>i{
+        color: var(--cor-fundo-1);
+    }
+    nav>span>a:hover>i{
+        color: gray ;
+    }
+}
+/* media para tablet */
+@media screen and (min-width:670px) and (max-width:992px) {
+    .onda{
+            width: 100%;
+    }
+    section{
+            width: 100vw;
+    }
+    main{
+            overflow: hidden;
+    }
+    #experi{
+        position: absolute;
+        top:5%;
+        left: 38%;
+        transform: (unset,-50%);
+    }
+    #experiencia{
+        height: 80vh;
+    }
+    #habilidade{
+        height: 80vh;
+    }
+    #experiencia> article{
+        height: 100%;
+        overflow: auto;
+    }
+    .projeto{
+        margin-top: 59px;
+    }
+    /* esqueda */
+    #containerEX{
+        border-right: none;
+        padding-bottom: 30px;
+    }
+    #containerEX > h3{
+        padding-left: 20px;
+    }
+    #containerEX > ul>li{
+        overflow: hidden;
+    }
+}
+/* media para celular */
+@media screen and (max-width:670px)  {
+    #legenda{
+     padding-bottom: 40px !important;
+    }
+    #perfil{
+        padding-top: 0px;
+    }
+    #home{ 
+        padding-bottom: 0px;
+    }
+    #sobre{
+        padding-top: 160px;
+    }
+    #zooNEW{
+        background-size:  120%;
+    }
+    header{
+        display: none !important;
+    }
+    #home{
+        padding-top: 1px;
+        background-color: var(--cor-fundo-1);
+        background-position: top center;
+    }
+    #home>article{
+        padding-top: 20%;
+        padding-left:  20px;
+        padding-right:  20px;
+    }
+    #home>article > h1{
+        font-size: 1.7em;
+        text-shadow: 2px 2px 2px black;
+    }
+    #home>article > h1> i{
+        display: none;
+    }
+    *{
+        font-size: 0.95em;
+    }
+    #home>article > p{
+        font-size: 1em;
+        text-shadow: 2px 2px 2px black;
+        padding-bottom: 100px;
+    }
+    .btn_rotation{
+        box-shadow: 1px 1px 1px white; 
+    }
+    .btnDiv::before{
+        display: none;
+    }
+    #perfil >article{
+        padding: 25px;
+        font-size: 1.2em;
+    }
+    #perfil >article>ul{
+        columns: 1;
+    }
+    #perfil >article>ul>li{
+        overflow: hidden;
+        font-size: 1.2em;
+        line-height: 1.9em;
+    }
+    #perfil >article>ul>li:nth-of-type(4)>strong{
+        padding-right: 24px;
+    }
+    #perfil{
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 30px;
+    }
+    #experiencia{
+        min-height: 190vh;
+    }
+    #experiencia > article{
+        display: block;
+        height: 100%;
+        position: unset;
+        transform: none;
+        margin: 0px auto;
+       
+    }
+    #eu{
+        height: 332px;
+        width: 240px;
+    }
+    #containerEX{
+        border: none;
+        height: min-content !important;
+        width: 100%;
+        display: block;
+        float: unset;
+    }
+    .onda> img{
+       display: none;
+    }
+    #containerEX>ul{
+        height: fit-content;
+        margin-bottom: 90px;
+        margin-right: 0px !important;
+    }
+    #containerEX>ul>li{
+        text-align: center;
+        font-weight: normal !important;
+        padding: 18px 0px !important;
+        margin: 20px 0px;
+        border-left: none;
+    }
+    #containerDesc{
+        height: fit-content !important;
+        width: 100%;
+        float: unset;
+        display: block;
+        padding: 0px !important;
+    }
+    #containerEX > h3{
+       display: none;
+    }
+    #containerDesc>div{
+        padding: 20px 0px;
+        position: unset;
+        text-align: center;
+    }
+    #containerDesc>div>span{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #containerDesc>div>h3{
+        font-size: 2em;
+        font-weight: normal !important;
+    }
+    #containerDesc>div>p{
+        font-size: 1.5em !important; 
+        padding: 80px 0px;
+        line-height: 2.2em;
+    }
+    #containerDesc>div > a {
+        display: block;
+        font-size: 1.8em !important;
+        width: 100%;
+        padding: 17px;
+        margin: 30px 0px;
+    }
+    #containerDesc>div > a >i{
+        display: none;
+    }
+    .bar{
+        width: 280px;
+    }
+    .projeto{
+       height: 300px;
+    }
+    #experiencia{
+       margin: 0px !important;
+    }
+}
+/* Resolver um bug em determinado momento */
+@media screen and (min-width:992px)and (max-width:1200px){
+    #habilidades>article{
+        width: 90%;
+       
+    }
+    *{
+        font-size: 1em;
+    }
+    .projeto{
+        max-width: 400px;
+        height: 280px;
+        font-size: 0.7em;
+    } 
+}
+#projTemp{
+    display: none;
+}
+.ii{
+    font-size: 5em !important;
+}
+
