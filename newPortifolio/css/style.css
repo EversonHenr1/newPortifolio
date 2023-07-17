@@ -15,6 +15,7 @@
     --cor-destaque-1:#1ed760;
     --cor-destaque-2:#17C3B2;
     --cor-detalhes-1:#EDE7EB;
+    --black2:#1f1a21;
     --fonte-normal-1:Gotham,Arial, Helvetica, sans-serif;
     --fonte-mono-1:Roboto Mono,'Courier New', Courier, monospace;
 }
@@ -58,7 +59,7 @@ h2{
     width: min-content;
     display: flex;
     flex-wrap: wrap-reverse;
-    color: var(--cor-fundo-1);
+    color: var(--black2);
     justify-content: center;
     margin: auto;
     font-family:Roboto;
@@ -117,7 +118,7 @@ a.btn_rotation{
     display: block;
     width: 147px;
     height: 52px;
-    background-color: var(--cor-fundo-1);
+    background-color: var(--black2);
     text-align: center;
     line-height: 52px;
     border-radius: 6px;
@@ -130,7 +131,7 @@ a.btn_rotation{
     position: relative;
     text-transform: uppercase;
     padding: 23px 40px;
-    border: 1px solid rgba(0, 0, 0, 0.151);
+    border: 1.5px solid #00000079;
     font-size: 1.1em;
     background-color: white;
     transition: 0.4s ease-in-out;  
@@ -155,7 +156,7 @@ a.btn_rotation{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    border: 3px solid var(--cor-destaque-1);
+    border: 2.3px solid var(--cor-destaque-1);
     box-shadow: 1px 1px 3px #1ed75f3a;
 }
 .btn_green > i:nth-child(1){
@@ -238,7 +239,7 @@ header > div > a:hover::after{
 #home > div > a:hover > i{
     transition: all 0.25s ease-in-out;
     border-color: var(--cor-detalhes-1);
-    color: var(--cor-fundo-1);
+    color: var(--black2);
     background-color: #ffffff34;
 } 
 #home >div:hover{
@@ -254,12 +255,41 @@ header > div > a:hover::after{
 #home > article > h1{
     font-size: 2.5em;
     font-family: "roboto";
-    text-shadow: 1px 1px 5px #0000006b;
+    text-shadow: 3px 0px 13px #00000034;
     margin-bottom: 5px;
 }
 #home > article > p{
     color: white;
+    text-shadow: 3px 0px 13px #00000034;
     font-family: var(--fonte-mono-1);
+}
+#home > article > p::after{
+    content: "|";
+    color: white;
+    font-family: var(--fonte-mono-1);
+    font-family: Roboto;
+    animation: pis 1s infinite  linear;
+    padding-left: 3px;
+}
+.esconder::after{
+    display: none;
+}
+@keyframes pis {
+    10%{
+        color: rgba(2, 2, 2, 0);
+        
+    }
+    40%{
+        color: rgba(255, 255, 255, 0);
+        
+    }
+    50%{
+        color: white;
+    }
+    100%{
+       
+        color: white;
+    }
 }
 /* Menu */
 #barras{
@@ -278,7 +308,7 @@ header > div > a:hover::after{
 .menu{
     width: 33px;
     margin-bottom: 5px;
-    height: 7px;
+    height: 6.3px;
     border: 1px solid #1F1A21;
     transition: 0.5s ease-in-out;
     background-color: white;
@@ -352,30 +382,45 @@ nav >div > a:hover::after{
 }
 /* FOTO  SOBRE*/
 #container-foto{
+    margin-top: 50px;
     position: absolute;
     top: 60%;
     left: 40%;
     width: 400px;
     height: 500px;
     transform: translate(-90% ,-50%);
+    background-color: white !important;
+    
+    
+}
+.fa-times-circle{
+    color: var(--black2);
 }
 #eu{
     width: 90%;
     height: 100%;
-    border: 2px solid var(--cor-fundo-1);
-    outline: 2px solid var(--cor-fundo-1);
+    border: 1.5px solid var(--cor-fundo-1);
+    outline: 1.5px solid var(--cor-fundo-1);
     outline-offset: 4px;
+    z-index: 1;
  }
 /* Texto Sobre Mim */
+#perfil{
+    padding-bottom: 250px;
+}
+
 #perfil >article{
+    margin-top: 50px;
     position: absolute;
     top: 58%;
     left: 55%;
     transform: translate(-20% ,-50%);
     max-width: 550px;
+    
 }
 #perfil> article > p {
     text-align: justify;
+    
     color: var(--cor-fundo-1);
     margin-bottom: 20px;
 }
@@ -385,7 +430,7 @@ nav >div > a:hover::after{
 }
 #perfil > article> ul > li{
     font-size: 1.08em;
-    line-height: 1.5em;
+    line-height: 1.7em;
 }
 #perfil > article> ul > li > strong{
     color: var(--cor-destaque-1);
@@ -407,7 +452,7 @@ nav >div > a:hover::after{
 /* Experiencias */
 #experiencia{
     position: relative;
-    background-color: #241E25;
+    background-color: #221d24;
     min-height: 110vh;
 }
 #experiencia > article{
@@ -613,7 +658,7 @@ nav >div > a:hover::after{
     font-family: var(--fonte-normal-1);
     padding: 10px;
     padding-top: 70px;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in;
 }
 .projeto:hover >a> div{
     opacity: 1;
@@ -649,13 +694,37 @@ nav >div > a:hover::after{
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.158);
+    
+}
+
+.tecnologias{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    right: 100%;
+    background-color: var(--black2);
+    width:0; 
+    overflow: hidden !important;
+    gap: 25px 0px;
+    transition:0.5s ease-in !important;  
+    justify-content: center;
+    align-items: center;
+}
+ .projeto:hover > .tecnologias{
+    width: 45px;
+} 
+.tecnologias > img{
+   width: 40px;
+  
 }
 
 /* Rodapé */
 footer{
     position: relative;
     height: 350px;
-    background-color: #201b22;
+    background-color:  #1f1a21;
     text-align: center;
     padding-top: 90px;
     
@@ -696,7 +765,7 @@ footer > a{
     text-decoration: underline;
  }
  footer > a> i{
-    color: #1A1A1A;
+    color:  #1f1a21;
  }
  /* Efeito SCROLL */
 .init-hidden{
