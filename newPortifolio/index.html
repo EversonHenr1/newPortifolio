@@ -175,9 +175,45 @@
                     <div class="tecnologias"></div>
                 </div> 
             </article> 
-            <div class="onda" style="z-index: 1;">
+            
+        </section>
+        <section id="contato">
+            <h2 id="tittle-cont">
+                <span>
+                    <i class="fa fa-times-circle" aria-hidden="true" style="color: #1ed760;"></i><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i>
+                </span>
+                Contato
+            </h2>
+            <div id="Container-contact">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <h3>Entre em contato</h3>
+                    <!-- Manda dados para uma api, que irá mandar email para mim -->
+                    <input type="hidden" name="accessKey" value="ac2b0b24-0fe2-4d86-9ad0-beb9ab12cdff"> <!-- Key para utilizar a Api -->
+                    <input type="hidden" name="redirectTo" value="https://eversonhenr1.github.io/newPortifolio/newPortifolio/success"> <!-- Redirecionamento após a mensagem -->
+                    <div>
+                        <label for="name">Digite seu nome:</label>
+                        <input type="text"   id="name" name="name" maxlength="120" minlength="5" autocomplete="name">
+                        <legend> <i class="fa" aria-hidden="true" ></i></legend>
+                    </div>
+                    <div>
+                        <label for="email">Digite seu email:</label>
+                        <input type="email" name="email" id="email" maxlength="130" minlength="5"  autocomplete="email"  />
+                        <legend> <i class="fa" aria-hidden="true"></i></legend>
+                    </div>
+                    <div>
+                        <label for="message">Digite sua mensagem de contato:</label>
+                        <textarea name="message" id="message" maxlength="300" minlength="5"></textarea>
+                        <legend> <i class="fa" aria-hidden="true" ></i></legend>
+                    </div>
+                    <div>
+                        <input type="submit"  value="Enviar"/>
+                    </div>                    
+                </form>
+                 <div class="onda" style="z-index: 1;">
                 <img src="./imagens/svg/wave.svg" alt="imagem de fundo com formato de onda">
+            </div> 
             </div>
+            
         </section>
         <footer>
             <h3 class="init-hidden">Everson Henrique da Silva</h3>

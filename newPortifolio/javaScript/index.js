@@ -194,7 +194,89 @@
         arrProj.forEach((e,i)=>{ //Inseir os Projetos na pagina  
             paiProje.appendChild(arrProj[i].inserir())
         })
+
+        //Formulario de contato
+        const inputs = document.querySelectorAll("input")
+        const textarea = document.querySelector("textarea")
+        const submit = document.querySelector("input[type='submit']")
+        const form = document.querySelector("form")
+        let  enviar = 0
+        const validation = [inputs[2],inputs[3],textarea]
    
+
+        validation.forEach((inputs)=>{
+    
+            inputs.addEventListener("input",(input)=>{
+                const label =inputs.parentNode.querySelector("label");
+                if(!label.classList.contains("labelGoogle")){
+                    label.classList.add("labelGoogle")
+                    inputs.classList.add("boxLabel")
+                }
+                
+                const icone = inputs.parentNode.querySelector("legend > i")
+                const valor = input.target.value
+                const tam = valor.length
+
+                if(tam < 5 || tam >300){
+                    console.log("0")
+                    iconeColor(icone,true)
+                    
+                }else{
+                    iconeColor(icone,false)
+                    
+                }
+               
+            })
+            
+            
+        })
+    
+
+      
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            validation.map((e)=>{
+                if(e.value < 5 || e.value > 300){
+                    btnColor(true)
+                    
+                }else{
+                    btnColor(false)
+                    console.log("testando")
+                }
+            })
+            if(submit.classList.contains("green")){
+                form.submit()
+                form.classList.add("loading") 
+            }
+ 
+        })
+
+        function iconeColor (icone,vermelho){   
+            if(vermelho){
+                icone.classList.remove("fa-check-circle")
+                icone.classList.add("fa-times-circle"); 
+                
+            }else{
+                icone.classList.remove("fa-times-circle")
+                icone.classList.add("fa-check-circle")  
+                
+            }
+        }
+        function btnColor(red){
+            if(red){
+                submit.classList.remove("green")
+                submit.classList.add("red")
+                
+                
+            }else{
+                submit.classList.remove("red")
+                submit.classList.add("green")
+                
+            }
+        }
+       
+        
+    
     
     
   
