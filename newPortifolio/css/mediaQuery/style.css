@@ -374,6 +374,16 @@
     #experiencia{
        margin: 0px !important;
     }
+    
+    #Container-contact{
+        width: 100vw;
+    }
+    input[type="submit"]{
+        width: 300px;
+    }
+    label{
+        font-size: 1.28em;
+    }
 }
 /* Resolver um bug em determinado momento */
 @media screen and (min-width:992px)and (max-width:1200px){
