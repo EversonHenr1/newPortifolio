@@ -1,23 +1,30 @@
-// Escrever Habilidades
-        //guardar texto da legenda, e tag da legenda
-        var texto = "< Estudante de Analise e Desenvolvimento de Sistemas >";
-        var legenda = document.getElementById("legenda");
-            //Inicializar o contador
-            let cont = 0;
-           setTimeout(()=>{
-            const timer = setInterval(()=> {//Escrever uma legenda
-                if (cont < texto.length) {
-                    legenda.innerHTML += texto.charAt(cont);
-                    cont++;
-                }else{
-                    clearInterval(timer)
-                    legenda.classList.add("esconder")
-                }
-    
-                },120) ;
+window.addEventListener("load", function() {
+    let texto = "< Desenvolvedor Web >";
+    escreverLegenda(texto);
+});
 
-           },1000)
-            
+function escreverLegenda(txt) {
+    let elLegenda = document.querySelector("#legenda");
+    let contador = 0;
 
-            
-           
+    let intervaloEscrita = setInterval(function() {
+        if (contador < txt.length) {
+            elLegenda.textContent += txt.charAt(contador);
+            contador++;
+        } else {
+            clearInterval(intervaloEscrita);
+            setTimeout(deletarLegenda, 1000); 
+        }
+    }, 120);
+
+    function deletarLegenda() {
+        let intervaloDeletar = setInterval(function() {
+            if (elLegenda.textContent !== "") {
+                elLegenda.textContent = elLegenda.textContent.substring(0, elLegenda.textContent.length - 1); 
+            } else {
+                clearInterval(intervaloDeletar);
+                setTimeout(() => escreverLegenda(txt), 1000); 
+            }
+        }, 120);
+    }
+}
