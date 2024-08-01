@@ -6,8 +6,8 @@
     //Array com graficos
     let grafHabilidade = []
         //Arrays com informações dos graficos
-        let habilidades = ["Excel","HTML","css","JavaScript","SQL","linguagem C","Linguagem UML","Java (android)","Node.JS","React"]
-        let habilidadeTam =[40,70,68,35,40,10,25,20,25,15]
+        let habilidades = ["C#","HTML","css","JavaScript","SQL","Jquery","Boostrap","Aspnet MVC/Entity","Node.JS","React"]
+        let habilidadeTam =[60,70,68,45,40,80,60,20,60,35]
 
             //ForEach que criara os graficos
             habilidades.forEach((e,i,a)=>{
@@ -34,17 +34,8 @@
                     opacity = Math.min(1,Math.max(0,opacity));
 
                     if(opacity >= 1){
-
                         progress.style.width = `${habilidadeTam[i]}%`; 
-                        let cont = 0
-                        const attNumber = setInterval(()=>{
-                            
-                            porcentagem.innerHTML = `${cont}%`
-                            cont ++
-                            if(cont > habilidadeTam[i]){
-                                clearInterval(attNumber)
-                            }
-                        })
+                        porcentagem.innerHTML = `${habilidadeTam[i]}%`
                        
                     }else{
                         progress.style.width = "0px"
@@ -128,10 +119,10 @@
             }
         }
         //Inserir objetos com todas as informações
-        const ex0 = new ex("Estagiario ou Junior TI","coming soon","Estou em busca de uma oportunidade na qual possa adquirir novas experiências, como ingressante na área de TI, na qual curso faculade e conheço algumas linguagens como apresentado abaixo;","","",0,0,"none")
-        const ex2 = new ex("Jovem aprendiz administrativo","21/02/2022 a 13/01/2023", "Dentro da empresa minhas principais atividades são: Realizar questionamento com motorista após realizarem suas viajens, Realizar a baixa de finalização de entregas, Realizar leituras de coletas e baixa-las no sistema, Fazer questionamentos e lançar ocorrencias no sistema, Arquivamento de entregas.","https://www.viapajucara.com.br/","https://www.linkedin.com/company/viapajucaratransportes/",1,1,"inline")
-        const ex3 = new ex("Estagio Auxiliar Geral (contagem)","13/04/2021 a 31/12/2021","Dentro da empresa tinha como principais atividades: Realizar a contagem dos produtos no armazem e no espaço de vendas, Fazer lançamento dos resultados adquiros no sistema  Comunicão com o setor de inventario; Além  de ajudar no abastecimento, e atendimento ao cliente.","https://xsupermercados.com.br/","https://www.linkedin.com/company/x-supermercados/",1,1,"inline")
-        const ex1 = new ex("Estagio Logistica","18/09/2023","Atualmente trabalho no setor de Logistica da Nucleo Ferroligas, tendo com função agendar coletas, preencher e editar planilhas , e atividades Administrativas além de ajudar em algumas coisas na parte de Tecnologia","https://nucleoligas.com.br/","https://www.linkedin.com/company/nucleoligas",1,1,"inline")
+        const ex0 = new ex("Jr / Estagiario Desenvolvimento Web C#","2023 a atual","Atualmente, trabalho no desenvolvimento de um sistema voltado para o transporte escolar, atuando em todas as fases do projeto, incluindo front-end, back-end e cloud; utilizando ASP.NET 6 MVC com Entity Framework. Além disso, auxilio no suporte técnico .","https://vaninteligente.com.br/","",1,0,"inline")
+        const ex2 = new ex("Jovem aprendiz administrativo","2022 a 2023", "Dentro da empresa minhas principais atividades são: Realizar questionamento com motorista após realizarem suas viajens, Realizar a baixa de finalização de entregas, Realizar leituras de coletas e baixa-las no sistema, Fazer questionamentos e lançar ocorrencias no sistema, Arquivamento de entregas.","https://www.viapajucara.com.br/","https://www.linkedin.com/company/viapajucaratransportes/",1,1,"inline")
+        const ex3 = new ex("Estagio Auxiliar Geral (contagem)","2021 a 2021","Dentro da empresa tinha como principais atividades: Realizar a contagem dos produtos no armazem e no espaço de vendas, Fazer lançamento dos resultados adquiros no sistema  Comunicão com o setor de inventario; Além  de ajudar no abastecimento, e atendimento ao cliente.","https://xsupermercados.com.br/","https://www.linkedin.com/company/x-supermercados/",1,1,"inline")
+        const ex1 = new ex("Estagio Logistica","2023","Atualmente trabalho no setor de Logistica da Nucleo Ferroligas, tendo com função agendar coletas, preencher e editar planilhas , e atividades Administrativas além de ajudar em algumas coisas na parte de Tecnologia","https://nucleoligas.com.br/","https://www.linkedin.com/company/nucleoligas",1,1,"inline")
         
         
         //Criar a arr com todos os objetos
